@@ -1,10 +1,11 @@
 @echo off
-echo Running TDMS to CSV Monitor...
+echo Running TDMS to Google Sheets Monitor...
 cd monitor
-python monitor.py
+start "" python monitor.py
+cd ..
 
 echo Starting Web Dashboard...
-cd ../dashboard
+cd dashboard
 python app.py
 
 pause
